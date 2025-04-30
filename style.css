@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0 auto;
+    padding: 0;
+    max-width: 72rem;
+    background-color: #fff;
+    color: #1e1e1e;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap:52px;
+}
+
+h2, h3, strong{
+    font-weight: 600;
+}
+
+.menu-icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 8px 0;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.menu-icon-line {
+    width: 28px;
+    height: 3px;
+    background-color: #0a0a0a;
+    transition: all 0.3s ease;
+    border-radius: 1000px;
+}
+
+.menu-icon-line:last-child {
+    width: 18px;
+}
+
+#description{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 92px;
+    line-height: 90%;
+}
+
+h3{
+    font-size: 38px;
+    line-height: 90%;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.techno {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+li{
+    background-color: #0a0a0a;
+    color: white;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 100px;
+}
+
+#tag-react{
+    background-color: #0EA5E9;
+}
+
+#tag-nodejs{
+    background-color: #22C55E;
+}
+
+#tag-symfony{
+    background-color: #c5224b;
+}
+
+#tag-springboot{
+    background-color: #5ec522;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.brand {
+    font-weight: 600;
+    color: #111827;
+    font-size: 18px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #FBED96, #ABECD6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+#decoration1{
+    z-index: -1;
+    position: fixed;
+    top: 375px;
+    left: 670px; 
+}
+
+.profil-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.hero .hello{
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: -6%;
+}
+
+.line-desc{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+}
+
+.line-desc img{
+    width: 50px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 60px;
+    line-height: 118%;
+    max-width: 815px;
+}
+
+.hero .btn-group a {
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #0a0a0a;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #0a0a0a;
+    color: #0a0a0a;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project a {
+    color: #111827;
+    font-weight: 500;
+    text-decoration: underline 3px #111827;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.skills {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.skills img {
+    width: 60px;
+}
+
+footer {
+    background: #0a0a23;
+    color: white;
+    padding: 2rem 0 0 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.logo-footer {
+    opacity: 10%;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    object-position: 80px 60px;
+}

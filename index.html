@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body class="max-w-6xl mx-auto">
+    <header>
+        <div class="brand-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="brand">Jules Le Corre</div>
+        </div>
+        <div class="menu-icon">
+            <div class="menu-icon-line"></div>
+            <div class="menu-icon-line"></div>
+            <div class="menu-icon-line"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="img/decoration-1.png" alt="decoration" id="decoration1">
+            <div class="profil-group">
+                <div style="width:140px; background-color: aliceblue; border-radius: 1000px; overflow:hidden;">
+                    <img src="img/banner-memoji-removebg-preview-2-removebg-preview.png" alt="Emoji"
+                        style="width:140px; transform: scale(1.4);">
+                </div>
+                <div class="hero-desc">
+                    <div class="line-desc">
+                        <p class="hello">Salut, moi c'est Jules</p>
+                        <img src="img/victory-hand_270c-fe0f.png" alt="">
+                    </div>
+                    <p style="padding-top: 20px;">
+                        <strong>Je développe <span style="color:#00bfff">des idées</span></strong> et contribue à construire des
+                        logiciels.
+                    </p>
+                </div>
+            </div>
+            <div class="btn-group">
+                <a href="#contato" class="btn-primary">Contact</a>
+                <a href="#" class="btn-outline">Télécharger le CV →</a>
+            </div>
+        </div>
+    
+        <section id="projects">
+            <h2>Mes <br>projets</h2>
+            <div class="projects">
+                <div class="project">
+                    <ul class="techno">
+                        <li id="tag-react">React</li>
+                        <li id="tag-nodejs">Node.js</li>
+                    </ul>
+                    <h3>Loco</h3>
+                    <img src="img/minia-loco.png" alt="Projet 1">
+                    <p><a href="#">GitHub</a> <a href="#">Déployer</a></p>
+                </div>
+                <div class="project">
+                    <ul class="techno">
+                        <li id="tag-symfony">Symfony</li>
+                    </ul>
+                    <h3>Sortir</h3>
+                    <img src="img/minia-sortir-3.png" alt="Projet 2">
+                    <p><a href="#">GitHub</a> <a href="#">Déployer</a></p>
+                </div>
+                <div class="project">
+                    <ul class="techno">
+                        <li id="tag-springboot">Java Springboot</li>
+                    </ul>
+                    <h3>Enreuch</h3>
+                    <img src="img/minia-enreuch-1.png" alt="Projet 3">
+                    <p><a href="#">GitHub</a> <a href="#">Déployer</a></p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Me <br>concernant</h2>
+            <p id="description">
+                J'ai 22 ans et je suis en transition de carrière, venant du domaine administratif où j'ai développé de
+                l'expérience en gestion de personnes, en gestion d'entreprise et en négociation client. Aujourd'hui, je
+                construis des applications fullstack !
+            </p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            </div>
+    
+            <footer>
+                <div>
+                    <h3>Vous avez des idées ?</h3>
+                    <p>Fabriquons les ensemble !</p>
+                    <p><a href="mailto:lecorrejules10@gmail.com">lecorrejules10@gmail.com</a></p>
+                    <p>
+                        <a href="#">Github</a> |
+                        <a href="#">LinkedIn</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/logo-footer.png" alt="logo-footer" class="logo-footer">
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from("header", {
+            scrollTrigger: {
+                trigger: "header",
+                start: "top 90%", // commence quand le haut du header est à 90% de la hauteur viewport
+            },
+            duration: 1,
+            y: -50,
+            opacity: 0,
+            ease: "power2.out"
+        });
+
+        gsap.from(".hero", {
+            scrollTrigger: {
+                trigger: ".hero",
+                start: "top 80%",
+            },
+            duration: 1,
+            delay: 0.5,
+            y: 50,
+            opacity: 0,
+            ease: "power2.out"
+        });
+
+        gsap.from("#projects", {
+            scrollTrigger: {
+                trigger: "section",
+                start: "top 80%",
+            },
+            duration: 1,
+            delay: 0.8,
+            y: 50,
+            opacity: 0,
+            ease: "power2.out",
+            stagger: 0.3
+        });
+
+        gsap.from("#contact", {
+            scrollTrigger: {
+                trigger: "section",
+                start: "top 40%",
+            },
+            duration: 1,
+            delay: 0.8,
+            y: 50,
+            opacity: 0,
+            ease: "power2.out",
+            stagger: 0.3
+        });
+    </script>
+</body>
+
+</html>
