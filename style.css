@@ -224,16 +224,54 @@ header {
     border-radius: 1rem;
 }
 
-.project a {
-    color: #111827;
-    font-weight: 500;
-    text-decoration: underline 3px #111827;
+.project a{
+    text-decoration: none;
+    color: #0a0a0a;
 }
 
-#contact{
+.project-links{
+    display: flex;
+    padding-left: 14px;
+    gap: 20px;
+}
+
+.project-link {
+    font-weight: 500;
+    padding:0px 3px 5px 3px;
+    border-bottom: solid #111827 3px ;
+}
+
+#about{
     display: flex;
     flex-direction: column;
+    gap: 77px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
     gap: 25px;
+}
+
+.desc-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    width: 50%;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+}
+
+#paragraph-line {
+    display: block;
+    flex: 0 0 4px;
+    width: 4px !important;
+    background-color: #0a0a0a;
+    height: 100%;
 }
 
 .skills {
@@ -245,6 +283,13 @@ header {
 
 .skills img {
     width: 60px;
+}
+
+.img-about{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
